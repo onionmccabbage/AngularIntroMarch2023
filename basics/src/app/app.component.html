@@ -9,6 +9,7 @@
   <p>{{products[0]['name']}} cost {{products[0]['price'] |currency:'GBP'}}</p>
   <!-- iterating over an iterable collection -->
   <ul>
+    <!-- every HTML element has attributes -->
     <!-- Angular has a few 'structural directives' -->
     <li *ngFor="let item of products" >{{item.name}} {{item.price |currency:'GBP'}}</li>
   </ul>
@@ -20,9 +21,14 @@
   <br/>
   <!-- square-brackets will inject a data model value INTO an element attribute property -->
   <img [src]="imgUrl" />
-  <!-- every HTML element has attributes -->
-  <!-- we nest child components inside the main app -->
+  <section> <!-- we can implement if-else like this -->
+    <aside *ngIf="showFlag; else alternative">
+      <p>This content is rendered because the flag is {{showFlag}}</p>    
+    </aside>
+    <ng-template #alternative>Here we have sosmething different because the flag is {{showFlag}}</ng-template>
+  </section>  
 </article>
+<!-- we nest child components inside the main app -->
 <footer>
   <app-footer />
 </footer>
