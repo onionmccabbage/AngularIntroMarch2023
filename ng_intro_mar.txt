@@ -1,6 +1,76 @@
+Angular Introduction
+====================
+March 20-23
+
+Toby Dussek
+
+9:30  start
+11:00 break
+12:30 lunch
+3:00  break
+4:30  end
+
+Monday
+- intro: ECMAScript versions, transpiler and tools
+- configuation files (JSON)
+- modular development and the command-line interface
+- Building a project
+- the cli
+- Structure of an Angular application
+- properties and events
+- Templates
+- Binding expressions
+- forms
+- Template directives: NgFor, NgIf
+- @Input, @Output, EventEmitter
+
+Tuesday
+- Consuming data
+- sanitize
+- Architecture
+- local storage options
+- overview of tool-chain
+- HttpClient
+- routing
+- Applying CSS styles and classes
+- testing
+
+Wednesday
+- custom components
+- production: AOT/JIT
+- NgModule
+- authorize/authenticate
+- Promises and Observables
+- Dealing with asynchronous results
+- cache-busting - users are still seeing the old version after a new prod is released
+
+Thursday
+- Angular architecture
+- TypeScript and Modern ECMAScript Essentials
+- Importing Angular libraries
+- Using built-in pipes
+- Using promises, observables, and the async pipe
+- Component Hierarchies
+- dependency injection
+- Route parameters and route data
+- Defining multiple router outlets
+- Bundling and tree-shaking
 
 
 
 
 
-Repo is here: https://github.com/onionmccabbage/AngularIntroMarch2023
+
+
+
+
+
+
+
+
+Course outline
+  https://www.frameworktraining.co.uk/courses/coding/javascript-js-libraries-frameworks/angular-training-course/
+
+End of course
+- post-course feedback
+- Repo is here: https://github.com/onionmccabbage/AngularIntroMarch2023
