@@ -1,0 +1,12 @@
+<article>
+  <h3>Enter a valid FaceBook name</h3>
+  <input placeholder="FaceBook name"
+    [value]="fbName" 
+    (change)="updateName($event)" />
+  <hr/>
+  <!-- <aside *ngIf="fbName"> -->
+    <img [src]="fbUrl" [title]="fbUrl" />
+    <!-- or... -->
+    <!-- <img src="https://graph.facebook.com/{{fbName}}/picture?type=normal" /> -->
+  <!-- </aside> -->
+</article>
