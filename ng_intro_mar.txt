@@ -13,7 +13,7 @@ Toby Dussek
 Monday
 - intro: ECMAScript versions, transpiler and tools
 - configuation files (JSON)
-- modular development and the command-line interface
+- modular development
 > Building a project
 - the cli
  - generate a footer containing some text and render it under the other content
@@ -21,9 +21,9 @@ Monday
 > Structure of an Angular application
 - properties and events
 - Templates
-- Binding expressions
+> Binding expressions {{}} [] () and [()]
 - forms
-- Template directives: NgFor, NgIf
+> Template directives: NgFor, NgIf
 - @Input, @Output, EventEmitter
 - polyfils and  Zone.js
 

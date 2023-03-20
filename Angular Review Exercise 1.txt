@@ -22,3 +22,5 @@ or you could derive the URL and bind using [src]=...
 Optional
 --------
 If the input element is empty, do not show any image (use *ngIf)
+
+let val = `here be ${dragons}`
