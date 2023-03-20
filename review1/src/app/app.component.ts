@@ -12,4 +12,8 @@ export class AppComponent {
     this.fbName = evt.target.value
     this.fbUrl = `https://graph.facebook.com/${this.fbName}/picture?type=normal`
   }
+  outerHandler(evt:any){
+    let received = evt
+    console.log(`A custom event was received ${received}`)
+  }
 }

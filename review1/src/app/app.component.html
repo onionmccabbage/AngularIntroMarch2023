@@ -1,4 +1,7 @@
 <article>
+  <!-- we can inject values for @Input properties -->
+  <app-child [incoming]="fbName" (customEvent)="outerHandler($event)" />
+  <app-child incoming="Again" />
   <h3>Enter a valid FaceBook name</h3>
   <input placeholder="FaceBook name"
     [value]="fbName" 
