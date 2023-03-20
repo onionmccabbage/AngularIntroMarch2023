@@ -1,0 +1,22 @@
+<!-- we need an HTML form if we wish to use validation -->
+<!-- as soon as we use a <form> tag, Angular creates an instance of an 'NgForm' -->
+<form>
+<!-- we will need 'category' and 'id' -->
+    <!-- <input id="cat" name="cat" 
+        [(ngModel)]="category"
+        placeholder="enter category"
+        required
+        min="1" max="8" /> -->
+    <select name="cats" [(ngModel)]="category">
+        <option *ngFor="let val of categories">{{val}}</option>
+    </select> 
+    <!-- <pre>{{category}} {{id}}</pre> -->
+    <br/>
+    <input id="cat_id" name="'cat_id"
+        [(ngModel)]="category_id"
+        placeholder="enter ID"
+        required
+        type="number" min="1" max="10" />
+    <br/>
+    <button >Go</button>
+</form>
