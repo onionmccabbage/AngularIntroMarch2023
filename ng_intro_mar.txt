@@ -14,9 +14,11 @@ Monday
 - intro: ECMAScript versions, transpiler and tools
 - configuation files (JSON)
 - modular development and the command-line interface
-- Building a project
+> Building a project
 - the cli
-- Structure of an Angular application
+ - generate a footer containing some text and render it under the other content
+ - ng g c footer
+> Structure of an Angular application
 - properties and events
 - Templates
 - Binding expressions
@@ -27,6 +29,7 @@ Monday
 
 Tuesday
 - Consuming data
+- understanding modern ECMAScript
 - sanitize
 - Architecture
 - local storage options
@@ -38,7 +41,8 @@ Tuesday
 
 Wednesday
 - custom components
-- production: AOT/JIT
+- lazy-loading
+- production: AOT/JIT minification
 - NgModule
 - authorize/authenticate
 - Promises and Observables

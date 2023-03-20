@@ -1,12 +1,13 @@
 Angular Review Exercise 1
 =========================
-The user will type into an input field and any matching publicFaceBook image will be displayed
+The user will type into an input field and any matching (public) FaceBook profile image will be displayed
 
 Details:
 --------
 Create a new Angular project called 'review1': 	ng new review1
 Delete everything inside app.component.html
 Then render an input element and an image
+
 Declare a model in the .ts file
 Bind whatever the user types into the input element to this model
 Find an elegant way to render the FaceBook image

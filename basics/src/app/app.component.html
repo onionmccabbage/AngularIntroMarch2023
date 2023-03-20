@@ -16,16 +16,21 @@
   <!-- Big theme - ONE WAY DATA BINDING -->
   <!-- round-brackets will READ A VALUE from an HTML property attribute-->
   <!-- the value is then sent as an event to an event handler -->
-  <button *ngIf="showFlag" (click)="doStuff()">Go</button>
-  <input placeholder="enter your name" value="products[2]['name']" />
+  <!-- stuff in Angular that starts with a dollar is internal Angular stuff -->
+  <button name="btnGo" *ngIf="showFlag" (click)="doStuff($event)">Go</button>
+  <!-- we can TWO_WAY bind like this [()] (needs the FormsModule) -->
+  <input placeholder="enter your name" [(ngModel)]="title" />
   <br/>
+  <input [value]="size" (change)="handleChange($event)" type="number" min="24" max="132" step="12" placeholder="size" />
   <!-- square-brackets will inject a data model value INTO an element attribute property -->
+  <br/>
   <img [src]="imgUrl" />
   <section> <!-- we can implement if-else like this -->
     <aside *ngIf="showFlag; else alternative">
       <p>This content is rendered because the flag is {{showFlag}}</p>    
     </aside>
     <ng-template #alternative>Here we have sosmething different because the flag is {{showFlag}}</ng-template>
+    <!-- note the hash sign - this represents a LOCAL name for any HTML tag -->
   </section>  
 </article>
 <!-- we nest child components inside the main app -->
