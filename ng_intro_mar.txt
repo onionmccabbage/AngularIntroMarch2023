@@ -23,6 +23,7 @@ Monday
 - forms
 - Template directives: NgFor, NgIf
 - @Input, @Output, EventEmitter
+- polyfils and  Zone.js
 
 Tuesday
 - Consuming data
