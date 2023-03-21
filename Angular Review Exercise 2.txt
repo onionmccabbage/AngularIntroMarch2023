@@ -1,0 +1,38 @@
+Angular Review Exercise 2
+=========================
+A new app will offer fields for 'city' and for 'country'
+A button will call a service to retrieve the weather for that city/country
+The weather description and temperature will be displayed
+
+Details
+-------
+Create a new app (ng new review2) without routing
+Generate a component and provide two <input> tags and a <button>
+Declare properties for 'cityPlaceholder', 'counryPlaceholder' and 'btnLabel'
+Bind these to the <input> placeholders and the <button> text
+
+Generate a service and implement a method to get data from
+http://api.openweathermap.org/data/2.5/weather?q=london,gb&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+(replace city and country with user-supplied values)
+
+When the user fills in the form and clicks the button, invoke a call to a method of this service
+From the returned JSON, show description and temperature (converted to Celcius)
+	e.g. myWeatherData.weatherDescription = this.weatherReport.weather[0].description
+
+Optional
+--------
+When the app first loads call some default weather data using ngOnInit
+Configure a default (click) handler for the button which then emits a custom event
+Handle this custom event in the parent component, where you make hte actual service call
+Pass the returned weather data down into another component for display
+
+Show a few more weather data members, such as wind-speed and direction
+Offer a drop-down for the country field
+  For example, suggest bg, gb, fr, de, ei, es, it, usa, uae, aus, ru (from a local data set)
+Validate that there is a 2-3 letter country code and the city is a non-empty string
+
+
+
+
+
+

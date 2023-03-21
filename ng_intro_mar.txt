@@ -29,12 +29,13 @@ Monday
 
 Tuesday
 > Consuming data
+- BOM, WOM and DOM
 - understanding modern ECMAScript
 - Promises and Observables
 - sanitize
-- Architecture
+> Architecture
 - how to specify the parameter and return type of a fn
-- ensure data type safe throughout request-response opf HTTP
+- ensure data type safety throughout request-response of HTTP
 - local storage options
 - overview of tool-chain
 > HttpClient
