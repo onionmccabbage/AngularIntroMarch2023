@@ -11,6 +11,9 @@ import { AboutComponent } from './about/about.component';
 import { PersonComponent } from './person/person.component';
 import { DetailsComponent } from './details/details.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { A1Component } from './about/a1/a1.component';
+import { A2Component } from './about/a2/a2.component';
+import { A3Component } from './about/a3/a3.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { NotfoundComponent } from './notfound/notfound.component';
     AboutComponent,
     PersonComponent,
     DetailsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    A1Component,
+    A2Component,
+    A3Component
   ],
   imports: [
     BrowserModule,
