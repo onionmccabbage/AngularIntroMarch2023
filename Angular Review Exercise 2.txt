@@ -1,4 +1,4 @@
-Angular Review Exercise 2 1hr 15mins at least
+Angular Review Exercise 2 1hr 15mins at least (until about 3:00)
 =========================
 A new app will offer fields for 'city' and for 'country'
 A button will call a service to retrieve the weather for that city/country
