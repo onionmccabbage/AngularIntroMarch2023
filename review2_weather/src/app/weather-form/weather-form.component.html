@@ -1,0 +1,23 @@
+<section>
+    <input [(ngModel)]="city" id="txtCity" [placeholder]="txtCityPlaceholder" />
+    <br/>
+    <select [(ngModel)]="country">
+        <option *ngFor="let country of countryCodes">{{country}}</option>
+    </select>
+    <!-- <input id="txtCountry" [placeholder]="txtCountryPlaceholder" /> -->
+    <br/>
+    <button (click)="handleButtonClick()">{{btnLabel}}</button>
+    <!-- <pre>{{weatherData |json}}</pre> -->
+    <hr/>
+    <aside *ngIf="weatherData.weather[0].description">
+        <h4>Todays Weather for {{city}} {{country}}</h4>
+        <dl>Description</dl>
+            <dd>{{weatherData.weather[0].description}}</dd>
+        <dl>Temperature</dl>
+            <!-- nice bit of decimal rounding via a pipe -->
+            <dd>{{weatherData.main.temp-273 |number:'1.2-2'}}&deg;C</dd>
+        <dl>Wind</dl>
+            <dd>Speed {{weatherData.wind.speed}}</dd>
+            <dd>Direction {{weatherData.wind.deg}}&deg; from North</dd>
+    </aside>
+</section>
