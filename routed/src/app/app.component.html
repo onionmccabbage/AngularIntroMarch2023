@@ -1,11 +1,19 @@
 <article>
   <!-- we need some hyperlinks -->
   <nav>
-    <a href="/home">Home</a> |
+    <!-- <a href="/home">Home</a> | -->
+    <!-- angular provides 'routerLink' - gives context for css -->
+    <a routerLink="/home">Home</a> |
     <a href="/about">About</a> |
     <a href="/person">Person</a> |
     <a href="/details">Details</a> |   
   </nav>
+
+  <!-- can we use guards to conditionaly render non-routed components -->
+  <aside *ngIf="securityStatus">
+    <app-about />
+  </aside>
+
 
   <!-- we need somewhere for the routed content to appear -->
   <router-outlet></router-outlet>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { authGuard } from './auth/authGuard';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
@@ -30,8 +31,18 @@ const routes: Routes = [
     component:PersonComponent
   },
   {
+    path:'person/:name', // the colon indicates 'name'will be a URL parameter
+    component:PersonComponent
+  },
+  {
+    path:'person/:name/:age',
+    component:PersonComponent
+  },
+  {
+    // we will only permit authenticated users (authGuard)
     path:'details',
-    component:DetailsComponent
+    component:DetailsComponent,
+    canActivate:[authGuard] // may be several authentiactions
   },
   {
     // careful - make sure the other routes work before implementing this

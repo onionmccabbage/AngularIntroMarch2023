@@ -39,8 +39,9 @@ Tuesday
 - local storage options
 - overview of tool-chain
 > HttpClient
-- routing
-- routing and authentication (sessions)
+> routing
+> Route parameters and route data
+- routing and authentication (sessions) - Angular Guards
 - Applying CSS styles and classes
 - testing
 - TS Interface
@@ -59,11 +60,10 @@ Thursday
 - Angular architecture
 - TypeScript and Modern ECMAScript Essentials
 - Importing Angular libraries
-- Using built-in pipes
+> Using built-in pipes
 - Using promises, observables, and the async pipe
 - Component Hierarchies
 - dependency injection
-- Route parameters and route data
 - Defining multiple router outlets
 - Bundling and tree-shaking
 

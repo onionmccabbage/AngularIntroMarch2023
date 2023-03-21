@@ -28,6 +28,8 @@ export class WeatherFormComponent {
   }
   handleweatherData(){
     return (weatherResponse:any)=>{
+      // weatherResponse IS an ES object
+      // same shape so it unpacks the data
       this.weatherData = weatherResponse
     }
   }
