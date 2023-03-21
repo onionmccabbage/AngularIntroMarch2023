@@ -11,7 +11,8 @@ export class MyFormComponent {
   categories = ['users', 'posts', 'albums', 'photos', 'todos']
   category = this.categories[0]
   category_id = 1
-  dataModel = {}
+  // we can make a TS Interface for our model
+  dataModel = {'name':'', 'thumbnailUrl':''}
   data_j    = ''
   // methods
   constructor(private typicode:TypicodeService){}

@@ -1,7 +1,44 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { PersonComponent } from './person/person.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'', // re-direct the default to our home page
+    redirectTo:'home',
+    pathMatch:'full'
+  },
+  {
+    path:'homestead', // alternative names, common mis-spellings, reduntant routes
+    redirectTo:'home',
+    pathMatch:'full'
+  },
+  {
+    path:'home', // this represents exactly what will be on the end of the base root url
+    component:HomeComponent
+  },
+  {
+    path:'about',
+    component:AboutComponent   
+  },
+  {
+    path:'person',
+    component:PersonComponent
+  },
+  {
+    path:'details',
+    component:DetailsComponent
+  },
+  {
+    // careful - make sure the other routes work before implementing this
+    path:'**', // this wll catch any path not already resolved
+    component:NotfoundComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

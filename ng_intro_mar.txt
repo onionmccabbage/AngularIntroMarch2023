@@ -28,7 +28,7 @@ Monday
 > polyfils and Zone.js
 
 Tuesday
-- Consuming data
+> Consuming data
 - understanding modern ECMAScript
 - Promises and Observables
 - sanitize
@@ -37,11 +37,12 @@ Tuesday
 - ensure data type safe throughout request-response opf HTTP
 - local storage options
 - overview of tool-chain
-- HttpClient
+> HttpClient
 - routing
 - routing and authentication (sessions)
 - Applying CSS styles and classes
 - testing
+- TS Interface
 
 Wednesday
 - custom components

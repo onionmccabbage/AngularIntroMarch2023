@@ -6,11 +6,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyFormComponent } from './my-form/my-form.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { PersonComponent } from './person/person.component';
+import { DetailsComponent } from './details/details.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFormComponent
+    MyFormComponent,
+    HomeComponent,
+    AboutComponent,
+    PersonComponent,
+    DetailsComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
