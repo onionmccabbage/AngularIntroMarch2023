@@ -41,24 +41,24 @@ Tuesday
 > HttpClient
 > routing
 > Route parameters and route data
-- routing and authentication (sessions) - Angular Guards
-- Applying CSS styles and classes
+> routing and authentication (sessions) - Angular Guards
+> Applying CSS styles and classes [hidden]='value'
 - testing
-- TS Interface
 
 Wednesday
 - custom components
 - lazy-loading
+- TypeScript and Modern ECMAScript Essentials
+- TS Interface
 - production: AOT/JIT minification
 - NgModule
-- authorize/authenticate
-- Promises and Observables
-- Dealing with asynchronous results
+> authorize/authenticate
+- Events, Promises and Observables
+> Dealing with asynchronous results
 - cache-busting - users are still seeing the old version after a new prod is released
 
 Thursday
 - Angular architecture
-- TypeScript and Modern ECMAScript Essentials
 - Importing Angular libraries
 > Using built-in pipes
 - Using promises, observables, and the async pipe
