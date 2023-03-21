@@ -15,27 +15,31 @@ Monday
 - configuation files (JSON)
 - modular development
 > Building a project
-- the cli
- - generate a footer containing some text and render it under the other content
- - ng g c footer
+> the cli
+ > generate a footer containing some text and render it under the other content
+ > ng g c footer
 > Structure of an Angular application
-- properties and events
-- Templates
-> Binding expressions {{}} [] () and [()]
+> properties and events
+> Templates
+> Binding expressions
 - forms
 > Template directives: NgFor, NgIf
-- @Input, @Output, EventEmitter
-- polyfils and  Zone.js
+> @Input, @Output, EventEmitter
+> polyfils and Zone.js
 
 Tuesday
 - Consuming data
 - understanding modern ECMAScript
+- Promises and Observables
 - sanitize
 - Architecture
+- how to specify the parameter and return type of a fn
+- ensure data type safe throughout request-response opf HTTP
 - local storage options
 - overview of tool-chain
 - HttpClient
 - routing
+- routing and authentication (sessions)
 - Applying CSS styles and classes
 - testing
 
