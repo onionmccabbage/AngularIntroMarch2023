@@ -14,6 +14,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { A1Component } from './about/a1/a1.component';
 import { A2Component } from './about/a2/a2.component';
 import { A3Component } from './about/a3/a3.component';
+import { ValComponent } from './val/val.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { A3Component } from './about/a3/a3.component';
     NotfoundComponent,
     A1Component,
     A2Component,
-    A3Component
+    A3Component,
+    ValComponent
   ],
   imports: [
     BrowserModule,

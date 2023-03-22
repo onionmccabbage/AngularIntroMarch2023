@@ -1,0 +1,21 @@
+<!-- #n marries up to the name='n' -->
+<input type="text" id="n" name="n" class="form-control"
+required minlength="4" appForbiddenName="bob"
+[(ngModel)]="hero.name" #n="ngModel">
+<!-- we conditionally enable the button when there are no validation errors -->
+<!-- <button *ngIf="n.errors==null" >Go</button> -->
+<button [disabled]="n.invalid" >Go</button>
+<!-- we can watch the validity -->
+<pre>{{n.invalid}} {{n.touched}} {{n.dirty}} {{n.errors |json}}</pre>
+<div *ngIf="n.invalid && (n.dirty || n.touched)"
+    class="alert">
+  <div *ngIf="n.errors?.['required']">
+    Name is required
+  </div>
+  <div *ngIf="n.errors?.['minlength']">
+    Name must be at least 4 characters long
+  </div>
+  <div *ngIf="n.errors?.['forbiddenName']">
+    Name cannot be Bob
+  </div>
+</div>

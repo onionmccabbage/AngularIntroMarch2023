@@ -29,13 +29,13 @@ Monday
 
 Tuesday
 > Consuming data
-- BOM, WOM and DOM
-- understanding modern ECMAScript
+> BOM, WOM and DOM
+> understanding modern ECMAScript
 - Promises and Observables
 - sanitize
 > Architecture
-- how to specify the parameter and return type of a fn
-- ensure data type safety throughout request-response of HTTP
+> how to specify the parameter and return type of a fn inc generics
+> ensure data type safety throughout request-response of HTTP
 - local storage options
 - overview of tool-chain
 > HttpClient
@@ -47,15 +47,15 @@ Tuesday
 
 Wednesday
 - custom components
-- lazy-loading
-- TypeScript and Modern ECMAScript Essentials
-- TS Interface
-- production: AOT/JIT minification
-- NgModule
+> lazy-loading
+> TypeScript and Modern ECMAScript Essentials
+> TS Interface
+> production: AOT/JIT minification
+> NgModule
 > authorize/authenticate
-- Events, Promises and Observables
+- Events, Promises and Observables - RxJS
 > Dealing with asynchronous results
-- cache-busting - users are still seeing the old version after a new prod is released
+> cache-busting - users are still seeing the old version after a new prod is released
 
 Thursday
 - Angular architecture
