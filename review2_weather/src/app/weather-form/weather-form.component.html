@@ -1,5 +1,7 @@
 <section>
-    <input [(ngModel)]="city" id="txtCity" [placeholder]="txtCityPlaceholder" />
+    <input [(ngModel)]="city" id="txtCity" name="txtcity" #txtCity="'ngModel"
+    [placeholder]="txtCityPlaceholder"
+     />
     <br/>
     <select [(ngModel)]="country">
         <option *ngFor="let country of countryCodes">{{country}}</option>
