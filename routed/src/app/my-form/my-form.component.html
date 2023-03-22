@@ -13,14 +13,21 @@
     </select> 
     <!-- <pre>{{category}} {{id}}</pre> -->
     <br/>
-    <input id="cat_id" name="cat_id" ngDebounce
+    <input id="cat_id" name="cat_id" #cat_id="ngModel"
         [(ngModel)]="category_id"
-        placeholder="enter ID"
-        required
-        type="number" min="1" max="10" #cat_id="ngModel" />
+        placeholder="enter ID" type="number"
+        required min="1" max="10" />
+    <aside *ngIf="cat_id.invalid && (cat_id.dirty || cat_id.touched)">
+        <span *ngIf="cat_id.errors?.['required']">Category Id is required</span>
+        <span *ngIf="cat_id.errors?.['min']">Category Id must be 1 or more</span>
+        <span *ngIf="cat_id.errors?.['max']">Category Id cannot exceed 10</span>
+    </aside>
     <br/>
-    <button (click)="handleForm()" >Go</button>
+    <button [disabled]="cat_id.invalid" (click)="handleForm()" >Go</button>
     <hr/>
     <!-- use the JSON pipe for easy visualization -->
-    <pre>{{dataModel.name}} {{dataModel.thumbnailUrl}}</pre>
+    <pre>{{singleTodo |json}}</pre>
+    <pre>{{singleUser |json}}</pre>
+
+    <!-- <pre>{{dataModel.name}} {{dataModel.thumbnailUrl}}</pre> -->
 </form>
