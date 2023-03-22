@@ -1,4 +1,5 @@
-import { ITodo } from "../types/Itodo"
+// the default exported entity needs no brackets
+import ITodo, {author} from "../types/Itodo"
 
 export class Todo implements ITodo {
     userId!: number // ! says we guarantee it WILL be provided (honest 'guv)
