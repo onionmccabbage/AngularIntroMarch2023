@@ -8,7 +8,7 @@ const isNum = (code)=>{
 const keyup$ = Rx.Observable.fromEvent(document, 'keyup')
 
 // here is a subscriber
-sub1 = keyup$.pluck('keyCode')
+const sub1 = keyup$.pluck('keyCode')
     .filter( isNum ) // only respond 32-126
     .subscribe( (k)=>{
         console.log(`The user typed ${String.fromCharCode(k)}`)
