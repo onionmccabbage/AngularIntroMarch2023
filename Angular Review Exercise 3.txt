@@ -1,0 +1,6 @@
+Angular Review Exercise 3
+=========================
+Implement validation for any free-text fields (e.g. city name)
+Write and use an interface and class to match the 'todos' JSON data
+Add utility functions to the class, e.g. get/set methods with validation
+Write other classes and conditionally populate them based on the category

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -15,6 +15,7 @@ import { A1Component } from './about/a1/a1.component';
 import { A2Component } from './about/a2/a2.component';
 import { A3Component } from './about/a3/a3.component';
 import { ValComponent } from './val/val.component';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +29,14 @@ import { ValComponent } from './val/val.component';
     A1Component,
     A2Component,
     A3Component,
-    ValComponent
+    ValComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

@@ -11,9 +11,9 @@ Toby Dussek
 4:30  end
 
 Monday
-- intro: ECMAScript versions, transpiler and tools
-- configuation files (JSON)
-- modular development
+> intro: ECMAScript versions, transpiler and tools
+> configuation files (JSON)
+> modular development
 > Building a project
 > the cli
  > generate a footer containing some text and render it under the other content
@@ -22,7 +22,7 @@ Monday
 > properties and events
 > Templates
 > Binding expressions
-- forms
+> forms
 > Template directives: NgFor, NgIf
 > @Input, @Output, EventEmitter
 > polyfils and Zone.js
@@ -31,13 +31,13 @@ Tuesday
 > Consuming data
 > BOM, WOM and DOM
 > understanding modern ECMAScript
-- Promises and Observables
+> Promises and Observables
 - sanitize
 > Architecture
 > how to specify the parameter and return type of a fn inc generics
 > ensure data type safety throughout request-response of HTTP
 - local storage options
-- overview of tool-chain
+> overview of tool-chain
 > HttpClient
 > routing
 > Route parameters and route data
