@@ -1,0 +1,12 @@
+<aside>
+  <select name='frmChoice' id='frmChoice' 
+    [(ngModel)]='params.choice'>
+    <option>Please choose</option>
+    <option *ngFor="let choice of choices">{{choice.option}}</option>
+  </select>
+  <br />
+  <input id='frmNumber' name='frmNumber' 
+    [(ngModel)]='params.number' type='range' min=1 max=6 />
+  <br />
+  <button (click)="onSubmit()" id='btnGo'>Get Data</button>
+</aside>

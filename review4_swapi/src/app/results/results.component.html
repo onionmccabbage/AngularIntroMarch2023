@@ -1,0 +1,11 @@
+<div>
+  <h2>Results</h2>
+  <!-- <pre id='monitor'>{{resultInstance |json}}</pre> -->
+  <section *ngIf="resultInstance.eyeColor" >
+    <app-people [person]="resultInstance" />
+  </section>
+  <section *ngIf="resultInstance.population">
+    <app-planets [planet]="resultInstance" />
+  </section>
+  <pre>All Details {{resultInstance |json}}</pre>
+</div>

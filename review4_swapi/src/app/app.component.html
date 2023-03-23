@@ -1,0 +1,14 @@
+<div>
+  <h2>Swapi Example</h2>
+  <!-- <nav>
+    <a routerLink='/form'>Form</a> | 
+    <a routerLink='/result'>Result</a> | 
+  </nav>
+  <router-outlet></router-outlet> -->
+  <app-form [choices]='choices' 
+    (userValues)='handleValues($event)'></app-form>
+  <app-results 
+    [resultInstance]='resultInstance'></app-results>
+  <hr/>
+  <!-- <pre>{{results|json}}</pre> -->
+</div>

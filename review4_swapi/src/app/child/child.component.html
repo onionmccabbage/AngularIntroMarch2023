@@ -1,0 +1,31 @@
+<section>
+  <button (click)='getSwapiData()'>Go</button>
+  <aside *ngIf='swapiReport'>
+    <h2>{{swapiReport.name}}</h2>
+
+    <h3 *ngIf="swapiReport.model" >
+      Model: {{swapiReport.model}} 
+      Manufacturer: {{swapiReport.manufacturer}} 
+      Max Speed: {{swapiReport.max_atmosphering_speed}}</h3>
+    <h3 *ngIf="swapiReport.designation" >
+      Classification: {{swapiReport.classification}} 
+      Average Lifespan: {{swapiReport.average_lifespan}} 
+      language: {{swapiReport.language}}</h3>
+    <h3 *ngIf="swapiReport.climate" >
+      Climate: {{swapiReport.climate}} 
+      Terrain: {{swapiReport.terrain}} 
+      Population: {{swapiReport.population}}</h3>
+    <span *ngIf="swapiReport.eye_color">
+    <h3>
+      Eyes: {{swapiReport.eye_color}} 
+      Hair: {{swapiReport.hair_color}} 
+      Height:{{swapiReport.height}}</h3>
+    <h4>Home world <a [href]='swapiReport.homeworld'>{{swapiReport.homeworld}}</a></h4>
+    </span>
+    <h4>films</h4>
+    <ul>
+      <li *ngFor="let film of swapiReport.films">{{film}}</li>
+    </ul>
+  </aside>
+  <pre>Returned Data: {{swapiReport |json}}</pre>
+</section>
