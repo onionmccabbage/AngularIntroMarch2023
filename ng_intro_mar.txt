@@ -65,26 +65,27 @@ Thursday
 > testing
   remember we can run any script using 'npm run ...'
 > Angular architecture - encourage UNIT components - re-useable, testable, manageable
-- custom components
-- sanitize
+> custom components with Input() and Output() bindings (and classes/interfaces)
+> sanitize
 > redux
 > Importing Angular libraries
   ng-bootstrap, ng-redux, ng-lint
 > Using built-in pipes
 - Using promises, observables, and the async pipe
-- Component Hierarchies
+> Component Hierarchies and data-management - use Redux at scale
 > dependency injection
-- Defining multiple router outlets
-- Bundling, minify, uglify and tree-shaking
+> Defining multiple router outlets and named router outlets
+> Bundling, minify, uglify and tree-shaking
 
 
-
-
+https://caniuse.com
+https://builtwith.com
+https://kangax.github.io/compat-table/es6/
 
 
 Course outline
   https://www.frameworktraining.co.uk/courses/coding/javascript-js-libraries-frameworks/angular-training-course/
 
 End of course
-- post-course feedback https://frameworktraining.typeform.com/
+- post-course feedback https://frameworktraining.typeform.com/to/pB10Khia
 - Repo is here: https://github.com/onionmccabbage/AngularIntroMarch2023
