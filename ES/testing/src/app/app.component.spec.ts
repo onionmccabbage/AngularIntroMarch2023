@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { LightBulbComponent } from './light-bulb/light-bulb.component';
 
 describe('App Component test', () => {
   beforeEach(async () => {
@@ -9,7 +10,8 @@ describe('App Component test', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        // make sure any child components are available to the top level
+        AppComponent, LightBulbComponent
       ],
     }).compileComponents();
   });

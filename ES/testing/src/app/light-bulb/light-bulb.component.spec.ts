@@ -20,4 +20,27 @@ describe('LightBulbComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // check when it first runs that isOn is false
+  it('light should initially be off', ()=>{
+    expect(component.isOn).toBe(false)
+  })
+
+  it('toggle on/off after clicks',()=>{
+    component.clicked()
+    expect(component.isOn)
+    .toBe(true)
+    component.clicked()
+    expect(component.isOn)
+    .toBe(false)
+  })
+
+  it('message reads correctly (off to begin)', ()=>{
+    expect(component.message)
+    .toMatch(/is off/i) // regex
+  })
+
+
+
+
 });
