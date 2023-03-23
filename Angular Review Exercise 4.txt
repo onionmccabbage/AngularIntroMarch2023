@@ -1,0 +1,24 @@
+Angular Review Exercise 4
+=========================
+Re-use as much code as possible from other projects to build a project that uses the SWAPI service
+	https://swapi.dev/api/
+Configure a service to accept a category and a number
+	https://swapi.co/api/people/1     (or starships, species, planets, vehicles)
+Configure a form to accept validated inputs for a category and a number
+Pass these to the service and handle the returned data
+
+You could do this by putting the form and the results into separate components
+
+The returned data is different for each catergory, but they all have a 'name' property
+So you could have a 'Swapi' class and other classes inherit from this
+
+Generate a production build of this application
+
+Optional
+--------
+In ngOnInit make an initial call to load a JSON config file, 
+containing default category and number values
+Pass the category and the number as URL parameters into a routed component which uses the URL parameters to make a call and show results
+Devise a couple of tests for your components
+When a request is returned, immediately make a further requests for the related films
+(handle multiple streams with a suitable rxjs operator)

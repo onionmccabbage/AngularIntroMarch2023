@@ -55,20 +55,21 @@ Wednesday
 > cache-busting - users are still seeing the old version after a new prod is released
 
 Thursday
-- questions: 
-  - hard-coded API paths: can we config them?
-  - early load: ngOnInit() in app.component
-  - JS can we filter JSON data. Yes as soon as your JSON is loaded, it becomes an object
+> questions: 
+  > hard-coded API paths: can we config them?
+  > early load: ngOnInit() in app.component
+ > JS can we filter JSON data. Yes as soon as your JSON is loaded, it becomes an object
     - you then filter the {} using map, filter and reduce
-  - locale welsh, dutch, international languges
+  > locale welsh, dutch, international languges
 > local storage options
-- testing
-  ng new testing --routing
+> testing
   remember we can run any script using 'npm run ...'
-- Angular architecture
+> Angular architecture - encourage UNIT components - re-useable, testable, manageable
 - custom components
 - sanitize
-- Importing Angular libraries
+> redux
+> Importing Angular libraries
+  ng-bootstrap, ng-redux, ng-lint
 > Using built-in pipes
 - Using promises, observables, and the async pipe
 - Component Hierarchies

@@ -9,6 +9,7 @@ export class ChildComponent {
   // properties of this class
   // @Input makes the property visible to the parent component
   @Input() incoming = ''
+  @Input() other=''
   @Output() customEvent = new EventEmitter()
 
   // methods of this class
