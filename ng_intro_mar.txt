@@ -32,21 +32,17 @@ Tuesday
 > BOM, WOM and DOM
 > understanding modern ECMAScript
 > Promises and Observables
-- sanitize
 > Architecture
 > how to specify the parameter and return type of a fn inc generics
 > ensure data type safety throughout request-response of HTTP
-- local storage options
 > overview of tool-chain
 > HttpClient
 > routing
 > Route parameters and route data
 > routing and authentication (sessions) - Angular Guards
 > Applying CSS styles and classes [hidden]='value'
-- testing
 
 Wednesday
-- custom components
 > lazy-loading
 > TypeScript and Modern ECMAScript Essentials
 > TS Interface
@@ -59,14 +55,22 @@ Wednesday
 > cache-busting - users are still seeing the old version after a new prod is released
 
 Thursday
+- questions: 
+  - hard-coded API paths: can we config them?
+  - early load: ngOnInit() in app.component
+  - locale welsh, dutch, international languges
+- local storage options
+- testing
 - Angular architecture
+- custom components
+- sanitize
 - Importing Angular libraries
 > Using built-in pipes
 - Using promises, observables, and the async pipe
 - Component Hierarchies
 > dependency injection
 - Defining multiple router outlets
-- Bundling and tree-shaking
+- Bundling, minify, uglify and tree-shaking
 
 
 
@@ -77,5 +81,5 @@ Course outline
   https://www.frameworktraining.co.uk/courses/coding/javascript-js-libraries-frameworks/angular-training-course/
 
 End of course
-- post-course feedback
+- post-course feedback https://frameworktraining.typeform.com/
 - Repo is here: https://github.com/onionmccabbage/AngularIntroMarch2023

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage options</title>
+</head>
+<body>
+    <p id="monitor"></p>
+</body>
+    <script>
+        // we can persist stuff on the client
+        localStorage.setItem('janitor', 'dog')
+        monitor.innerHTML = localStorage.getItem('secret')
+        localStorage.removeItem('secret')
+        localStorage.clear()
+    </script>
+</html>
