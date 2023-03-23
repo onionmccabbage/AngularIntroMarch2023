@@ -40,7 +40,4 @@ describe('LightBulbComponent', () => {
     .toMatch(/is off/i) // regex
   })
 
-
-
-
 });
